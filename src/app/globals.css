@@ -9,7 +9,7 @@
   --primary-500: #3b50b5;
   --primary-400: #5b72d0;
   --primary-300: #8b9ee0;
-  --primary-200: #bbc6f0;
+  --primary-200: #8EC5E8;
   --primary-100: #e6eaf9;
   --primary-50: #f3f5fc;
 
@@ -361,7 +361,7 @@ body {
 .submit-btn {
   width: 100%;
   padding: 14px 24px;
-  background: linear-gradient(135deg, var(--success-600) 0%, var(--success-500) 100%);
+  background: #8EC5E8;
   color: var(--white);
   font-family: var(--font-family);
   font-size: 1rem;
@@ -375,13 +375,13 @@ body {
   justify-content: center;
   gap: 8px;
   letter-spacing: 0.02em;
-  box-shadow: 0 4px 14px rgba(34, 197, 94, 0.35);
+  box-shadow: 0 4px 14px rgba(142, 197, 232, 0.35);
   margin-top: 8px;
 }
 
 .submit-btn:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(34, 197, 94, 0.4);
+  box-shadow: 0 6px 20px rgba(142, 197, 232, 0.4);
 }
 
 .submit-btn:active:not(:disabled) {

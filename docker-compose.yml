@@ -1,18 +1,18 @@
 services:
   postgres:
     image: postgres:16-alpine
-    container_name: jott-postgres
+    container_name: presensi-postgres
     restart: unless-stopped
     ports:
       - "5433:5432"
     environment:
-      POSTGRES_DB: jott_attendance
-      POSTGRES_USER: jott_user
-      POSTGRES_PASSWORD: jott_secret_2026
+      POSTGRES_DB: presensi_attendance
+      POSTGRES_USER: presensi_user
+      POSTGRES_PASSWORD: presensi_secret_2026
     volumes:
       - pgdata:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U jott_user -d jott_attendance"]
+      test: ["CMD-SHELL", "pg_isready -U presensi_user -d presensi_attendance"]
       interval: 5s
       timeout: 5s
       retries: 5
@@ -21,7 +21,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: jott-app
+    container_name: presensi-app
     restart: unless-stopped
     ports:
       - "3456:3456"
