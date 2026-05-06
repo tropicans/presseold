@@ -105,7 +105,7 @@ body {
 
 /* Header */
 .form-header {
-  background: linear-gradient(135deg, var(--primary-900) 0%, var(--primary-700) 60%, var(--primary-600) 100%);
+  background: #8EC5E8;
   padding: 36px 32px 32px;
   text-align: center;
   position: relative;
@@ -150,7 +150,7 @@ body {
 
 .header-subtitle {
   font-size: 0.82rem;
-  color: var(--primary-200);
+  color: rgba(255, 255, 255, 0.92);
   line-height: 1.5;
   max-width: 440px;
   margin: 0 auto;
